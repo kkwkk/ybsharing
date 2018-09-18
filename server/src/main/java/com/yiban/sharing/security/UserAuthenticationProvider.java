@@ -40,6 +40,7 @@ public class UserAuthenticationProvider implements AuthenticationProvider {
         // 获取认证的用户名 & 密码
         String username = authentication.getName();
         List<String> credentials = (List<String>) authentication.getCredentials();
+        log.info("--------------"+credentials);
         if (StringUtils.isEmpty(username)) {
             log.warn("username missing");
             throw new BizRuntimeException(ErrorCode.LOGIN_USERNAME_MISSING);

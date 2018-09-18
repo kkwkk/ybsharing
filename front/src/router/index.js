@@ -22,8 +22,8 @@ export const router = new Router(RouterConfig);
 
 router.beforeEach((to, from, next) => {
   iView.LoadingBar.start();
-  let title = to.meta.title ? to.meta.title : "医伴金服";
-  window.document.title = title;
+  //let title = to.meta.title ? to.meta.title : "医伴金服";
+  window.document.title = "医伴金服";
   if (!to.meta.noAuth) {
     // 判断该路由是否需要登录权限
     if (store.state.user && store.state.user.token) {

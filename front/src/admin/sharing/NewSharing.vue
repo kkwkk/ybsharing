@@ -84,7 +84,17 @@ export default {
           selectValues: "",
           options: []
         }
-      ],
+       ],
+       //dataList: [
+      //   {
+      //     name: "",
+      //     value: "",
+      //     required: false,
+      //     selector: false,
+      //     selectValues: "",
+      //     options: []
+      //   }
+      // ],
       submitLoading: false
     };
   },
